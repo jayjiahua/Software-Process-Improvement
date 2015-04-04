@@ -1,0 +1,230 @@
+/*
+    lab1-index.css
+    学号：13331271
+    姓名：吴嘉华
+*/
+
+body {  
+    font-family: "Microsoft YaHei","simsun","Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+li {    
+    list-style: none;
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .button {   
+    opacity: 1;
+    transition: 1s 0s;
+    -moz-transition: 1s 0s; /* Firefox 4 */
+    -webkit-transition: 1s 0s; /* Safari 和 Chrome */
+    -o-transition: 1s 0s; /* Opera */
+}
+
+
+.mask { 
+    background-image: url(assets/images/nomask.png);
+
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .mask { 
+    left: -64px;
+    bottom: 42px;
+}
+
+.history {  
+    background-image: url(assets/images/history.png);
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .history { 
+    left: -80px;
+    bottom: 0px;
+}
+
+.message {  
+    background-image: url(assets/images/message.png);
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .message { 
+    left: -64px;
+    bottom: -42px;
+}
+
+.setting {  
+    background-image: url(assets/images/setting.png);
+}
+
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .setting { 
+    left: -25px;
+    bottom: -68px;
+}
+
+
+.sign {  
+    background-image: url(assets/images/signin.png);
+}
+
+
+#at-plus-container:hover > #bottom-positioner > #button > #control-ring-container > #control-ring > .sign { 
+    left: 25px;
+    bottom: -65px;
+}
+
+.unread {
+    display: block;
+    position: relative;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    left: 23px;
+    bottom: 5px;
+}
+
+.info { 
+    overflow: hidden;
+    position: absolute;
+    left: -100px;
+    bottom: -40px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(168, 167, 167);
+    opacity: 0;
+    transition: 1s 0.7s;
+    -moz-transition: 1s 0.7s; /* Firefox 4 */
+    -webkit-transition: 1s 0.7s; /* Safari 和 Chrome */
+    -o-transition: 1s 0.7s; /* Opera */
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > #info-bar > .info {   
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+    bottom: 30px;
+    left: -145px;
+    transition: 1s 0s;
+    -moz-transition: 1s 0s; /* Firefox 4 */
+    -webkit-transition: 1s 0s; /* Safari 和 Chrome */
+    -o-transition: 1s 0s; /* Opera */
+}
+
+.user { 
+    position: relative;
+    left: 5px;
+    bottom: 5px;
+}
+
+.user > span { 
+    position: absolute;
+    bottom: 5px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+.comment {  
+    position: relative;
+    top: 5px;
+    right: 5px;
+}
+
+.comment > img {    
+    width: 30px;
+    height: 30px;
+}
+
+.comment > span {  
+    position: absolute;
+    bottom: 6px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.mine > span {  
+    position: absolute;
+    bottom: 6px;
+    font-weight: bold;
+    color: #079E6E;
+    padding-left: 5px;
+}
+
+.posted {  
+    position: relative;
+    right: 20px;
+    top: 7px;
+}
+
+.like {  
+    position: relative;
+    left: 30px;
+    bottom: 20px;
+}
+
+.icon { 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(168, 167, 167);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 15px;
+    background-image: url(assets/images/atplus_white.png);
+    transition: 1s 1.4s;
+    -moz-transition: 1s 1.4s; /* Firefox 4 */
+    -webkit-transition: 1s 1.4s; /* Safari 和 Chrome */
+    -o-transition: 1s 1.4s; /* Opera */
+
+}
+
+#at-plus-container:hover > #bottom-positioner > #button > .apb > .icon {
+    transform: scale(2, 2);
+    -webkit-transform: scale(2, 2);
+    -moz-transform: scale(2, 2);
+    -o-transform: scale(2, 2);
+    -ms-transform: scale(2, 2);
+    transition: 1s 0s;
+    -moz-transition: 1s 0s; /* Firefox 4 */
+    -webkit-transition: 1s 0s; /* Safari 和 Chrome */
+    -o-transition: 1s 0s; /* Opera */
+    background-color: rgba(48, 63, 159, 1);
+    background-image: url(assets/images/atplus_green.png);
+
+
+}
+
+#at-plus-container {    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.button { 
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: gray;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    opacity: 0;
+    left: 7px;
+    bottom: 5px;
+    transition: 1s 0.7s;
+    -moz-transition: 1s 0.7s; /* Firefox 4 */
+    -webkit-transition: 1s 0.7s; /* Safari 和 Chrome */
+    -o-transition: 1s 0.7s; /* Opera */
+}
+
+#info-bar { 
+    position: absolute;
+    left: 100px;
+}
+

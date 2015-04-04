@@ -1,0 +1,35 @@
+body {  
+    font-family: "Microsoft YaHei","simsun","Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+table { 
+    border-collapse: collapse;
+}
+
+th {    
+    border: solid 1px gray;
+    border-right-color: white;
+    padding: 0 20px 0 5px;
+    color: white;
+    text-align: left;
+    background: no-repeat rgb(3, 27, 125) right;
+}
+
+td { 
+    border: solid 1px gray;
+    padding: 0 5px;
+}
+
+.ascend {   
+    background-color: rgb(165, 175, 250);
+    background-image: url(ascend.png);
+}
+
+.descend {  
+    background-color: rgb(165, 175, 250);
+    background-image: url(descend.png);
+}
+
+.alternate {    
+    background-color: rgb(221, 221, 221);
+}
